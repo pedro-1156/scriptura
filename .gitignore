@@ -1,0 +1,7 @@
+.zed/
+build/
+.venv/
+__pycache__/
+build/
+.git/
+automation.spec
