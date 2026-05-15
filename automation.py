@@ -17,7 +17,7 @@ if arquivo:
         [r"C:\Program Files\Google\Chrome\Application\chrome.exe", "https://claude.ai"],
         creationflags=subprocess.CREATE_NO_WINDOW,
     )
-    sleep(2)
+    sleep(2.5)
     pyautogui.hotkey("ctrl", "v")
     pyautogui.write(
         "Mande uma versao corrigida (esteticamente, se necessario; gramaticalmente, se tiver erros e repeticoes ou se haver algo que tem como melhorar; e se for uma prova ou algo do tipo, melhore o jeito em que as questões sao feitas, como: se tiverem 7 questões pra 1 ponto, melhore, pois nao há um jeito certo de dividir corretamente) a questao"
