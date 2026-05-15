@@ -89,7 +89,7 @@ Then:
 
 ## 📸 Preview
 
-![Graphical Interface](assets/interface.png)
+![Graphical Interface](assets/photo.png)
 
 ---
 
