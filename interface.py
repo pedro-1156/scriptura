@@ -18,8 +18,8 @@ def main():
     ctk.set_appearance_mode("dark")
     app = ctk.CTk()
     app.geometry("500x500")
-    app.iconbitmap(r"C:\Users\Home\Downloads\document-project\logo.ico")
-    app.title("Corretor de arquivos Word")
+    app.iconbitmap("scriptura.ico")
+    app.title("Scriptura")
     button = ctk.CTkButton(app, text="Escolha arquivo", command=achar_arquivo)
     text = ctk.CTkLabel(
         app, text="Clique no botão abaixo para escolher um arquivo e saia da janela."
