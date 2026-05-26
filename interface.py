@@ -2,6 +2,8 @@ from tkinter import filedialog
 
 import customtkinter as ctk
 
+import sys, os
+
 caminho = None
 
 
@@ -10,7 +12,7 @@ def achar_arquivo():
     caminho = filedialog.askopenfilename(
         title="Escolha um arquivo Word", filetypes=[("Arqivos Word", "*.docx")]
     )
-    return caminho if caminho and caminho.endswith(".pdf") else None
+    return caminho if caminho and caminho.endswith(".docx") else None
 
 
 def main():
@@ -18,7 +20,9 @@ def main():
     ctk.set_appearance_mode("dark")
     app = ctk.CTk()
     app.geometry("500x500")
-    app.iconbitmap("scriptura.ico")
+    base_path = getattr(sys, "_MEIPASS", os.path.dirname(__file__))
+    icon_path = os.path.join(base_path, "scriptura.ico")
+    app.iconbitmap(icon_path)
     app.title("Scriptura")
     button = ctk.CTkButton(app, text="Escolha arquivo", command=achar_arquivo)
     text = ctk.CTkLabel(
